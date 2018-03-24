@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+    <!-- Font Awesome Icons -->
+    <script async defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <title>Heisenberg's Lab</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        
+        #cover {
+            color: lightcyan;
+            text-align: center;
+            background-image: url("/img/landingpage-cover.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 40em;
+        }
+        
+        #projects {
+            text-align: center;
+            color: black;
+        }
+        
+        #education {
+            text-align: center;
+        }
+        
+        #education-heading {
+            color: slategrey;
+        }
+        
+        #education-content1 {
+            color: steelblue;
+        }
+        
+        #education-content2 {
+            color: steelblue;
+        }
+        
+        #education-content3 {
+            color: steelblue;
+        }
+        
+        #skills {
+            text-align: center;
+        }
+        
+        #workexperience {
+            text-align: center;
+            color: black;
+        }
+        
+        #scrollBtn {
+            display: inline;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            color: white;
+            cursor: pointer;
+        }
+        
+        #scrollBtn:hover {
+            background-color: #555;
+        }
+        
+        h1 {
+            color: white;
+        }
+        
+        .card {
+            max-width: 60rem;
+        }
+        
+        .card-img-top {
+            max-height: 30em;
+        }
+    </style>
+</head>
+
+<body id="page-top">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark" id="navbar-wrapper">
+        <a class="navbar-brand" href="#page-top">Spaced Out</a>
+        <a class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#page-top">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projectsHeading">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#educationHeading">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skillsHeading">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#workexHeading">Work Experience</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Cover section -->
+    <div class="container-fluid mb-4" id="cover">
+        <br>
+        <br>
+        <br>
+        <h2 class="display-4 my-5">Welcome to Spaced Out</h2>
+        <h6 class="display-5 my-5"></h6>
+        <a href="#projectsHeading" class="btn btn-primary btn-lg rounded-circle my-5" id="viewprojects-button"><i class="fas fa-angle-down"></i></a>
+    </div>
+
+    <!-- Projects section -->
+    <div class="container-fluid" id="projects">
+        <h1 id="projectsHeading">Projects</h1>
+        <br>
+        <h4 class="text-muted">Digital Marketing</h4>
+        <br>
+        <div class="card mx-auto">
+            <img class="card-img-top img-fluid" src="/img/Projects.jpeg" alt="Digital Marketing Nanodegree projects">
+            <div class="card-body">
+                <h5 class="card-title"> Udacity Digital Marketing Nanodegree</h5>
+                <p class="card-text">Summarized the different marketing campaigns executed and reflected on the results. Evaluated the ROI of the campaigns, compared the results across platforms, then formulated recommendations for future marketing action and budget allocation.
+                    View my Udacity profile below to see the projects.</p>
+                <a href="https://profiles.udacity.com/p/9709879601" class="btn btn-dark">View Profile</a>
+            </div>
+        </div>
+        <br>
+        <h4 class="text-muted">Web Design</h4>
+        <br>
+        <div class="card mx-auto">
+            <img class="card-img-top img-fluid" src="/img/webdesign-card.jpg" alt="My website project">
+            <div class="card-body">
+                <h5 class="card-title"> My Website</h5>
+                <p class="card-text">Used HTML5, CSS3, and Bootstrap to build a personal website, which you are viewing right now. Take a look at the source on GitHub.</p>
+                <a href="#" class="btn btn-dark">View Source</a>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- Education -->
+    <div class="container-fluid" id="education">
+        <h1 id="educationHeading"> Education</h1>
+        <br>
+        <div class="container-fluid">
+            <div class="row" id="education-heading">
+                <div class="col">
+                    <h4>Where</h4>
+                </div>
+                <div class="col">
+                    <h4> What</h4>
+                </div>
+                <div class="col">
+                    <h4> When</h4>
+                </div>
+            </div>
+            <br>
+            <div class="row" id="education-content1">
+                <div class="col">
+                    <h6>Udacity</h6>
+                </div>
+                <div class="col">
+                    <h6> Digital Marketing Nanodegree</h6>
+                </div>
+                <div class="col">
+                    <h6> 2017</h6>
+                </div>
+            </div>
+            <br>
+            <div class="row" id="education-content2">
+                <div class="col">
+                    <h6>Pune University, Pune</h6>
+                </div>
+                <div class="col">
+                    <h6> Bachelor of Commerce (Marketing)</h6>
+                </div>
+                <div class="col">
+                    <h6> 2016</h6>
+                </div>
+            </div>
+            <br>
+            <div class="row" id="education-content3">
+                <div class="col">
+                    <h6>Asian School of Cyber Laws</h6>
+                </div>
+                <div class="col">
+                    <h6> Certified Cyber Crime Investigator</h6>
+                </div>
+                <div class="col">
+                    <h6> 2014</h6>
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="container-fluid" id="skills">
+        <h1 id="skillsHeading">Skills</h1>
+        <br>
+        <div class="row">
+            <div class="col">
+                <i class="fab fa-html5 fa-3x" alt="HTML5 Logo" style="color:tomato"></i>
+            </div>
+            <div class="col">
+                <i class="fab fa-css3-alt fa-3x" alt="CSS3 Logo" style="color:steelblue"></i>
+            </div>
+            <div class="col">
+                <img src="/img/bootstrap-stack.png" alt="Bootstrap Logo" style="width:3.5rem">
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col">
+                <img src="/img/googleanalytics-logo.webp" alt="Google Analytics Logo" href="https://www.google.com/analytics/" style="width:6rem">
+            </div>
+            <div class="col">
+                <i class="fab fa-github fa-3x" alt="GitHub Logo"></i>
+            </div>
+            <div class="col">
+                <img src="/img/adwords-logo.png" alt="Google AdWords Logo" style="width:3rem">
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <!-- Work Experience -->
+
+    <div class="container-fluid" id="workexperience">
+        <h1 id="workexHeading">Work Experience</h1>
+        <br>
+        <div class="card mx-auto">
+            <img class="card-img-top img-fluid" src="/img/tbtc-cover.jpg" alt="The Bow Tie Company Logo">
+            <div class="card-body">
+                <h5 class="card-title">The Bow Tie Company</h5>
+                <h6>SEO Analyst</h6>
+                <p class="text-muted">November - December 2017</p>
+                <p class="card-text">Performed an SEO audit of the client's website using Moz, Screaming Frog, Google Trends, and PageSpeed Insights. Analysed backlinks and suggested potential sources for backlinking.</p>
+                <a href="https://thebowtiecompany.in" class="btn btn-dark" alt="Visit client's website">Visit Website</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Me -->
+    <br>
+    <div class="container-fluid">
+        <h1 style="text-align:center" id="contactmeHeading">Contact Me</h1>
+        <br>
+        <form class="needs-validation" method="POST" action="contact-form.php" id="contact-form" role="form" novalidate>
+            <div class="messages"></div>
+            <div class="form-row">
+                <div class="col-4 mb-3">
+                    <label for="firstname">First name</label>
+                    <input type="text" name="firstname" class="form-control" id="firstname" placeholder="First name" value="" required>
+                    <div class="invalid-feedback">
+                        Please provide a first name.
+                    </div>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-4 mb-3">
+                    <label for="lastname">Last name</label>
+                    <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Last name" value="" required>
+                    <div class="invalid-feedback">
+                        Please provide a last name.
+                    </div>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+                <div class="col-4 mb-3">
+                    <label for="emailid">Email</label>
+                    <input type="email" name="emailid" class="form-control" id="emailid" placeholder="Email" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid email address.
+                    </div>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col">
+                    <label for="requirement">Type of requirement</label>
+                    <select class="form-control" name="requirement" id="requirement" required>
+                      <option value="">Choose...</option>
+                      <option value="digitalmarketing">Digital Marketing</option>
+                      <option value="webdesign">Web Design</option>
+                      <option value="DMandWD"> Digital Marketing & Web Design</option>             
+                    </select>
+                    <div class="invalid-feedback">
+                        Please choose one option.
+                    </div>
+                    <div class="valid-feedback">
+                        Looks good!
+                    </div>
+                </div>
+            </div>
+            <br>
+            <a href="#" class="btn btn-primary active" role="button" name="submit">Submit</a>
+        </form>
+    </div>
+    <br>
+
+    <!-- Fixed footer -->
+
+    <nav class="navbar navbar-bottom navbar-dark bg-dark">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link" data-toggle="modal" data-target="#licensesModal"> Open-source licenses <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Social buttons come here</a>
+        </div>
+    </nav>
+
+    <!-- Open-source licenses modal -->
+
+    <div class="modal fade" id="licensesModal" tabindex="-1" role="dialog" aria-labelledby="licensesModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="licensesModalLongTitle">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <a class="d-block" href="https://github.com/twbs/bootstrap/blob/master/LICENSE">CSS framework - Bootstrap</a>
+                    <br>
+                    <a class="d-block" href="https://unsplash.com/@nasa">Cover photo - NASA</a>
+                    <br>
+                    <a class="d-block" href="https://fontawesome.com/icons">Fonts - Font Awesome</a>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scroll-to-top FAB starts-->
+
+    <a class="btn btn-primary btn-lg rounded-circle" href="#page-top" id="scrollBtn"><i class="fas fa-angle-up"></i></a>
+
+
+    <!-- JavaScript for disabling form submissions if there are invalid fields -->
+    <script>
+        (function() {
+            'use strict';
+            window.addEventListener('load', function() {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="/js/jquery-3.3.1.min.js"></script>
+
+    <script src="/js/bootstrap.bundle.min.js "></script>
+    <script src="/js/smooth-scrolling.js"></script>
+</body>
+
+</html>
