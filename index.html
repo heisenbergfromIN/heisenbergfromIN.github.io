@@ -310,12 +310,15 @@
             <div class="form-row">
                 <div class="col">
                     <label for="requirement">Type of requirement</label>
-                    <select class="form-control" name="requirement" id="requirement" required>
-                      <option value="">Choose...</option>
-                      <option value="digitalmarketing">Digital Marketing</option>
-                      <option value="webdesign">Web Design</option>
-                      <option value="DMandWD"> Digital Marketing & Web Design</option>             
-                    </select>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="digitalmarketing-checkbox" value="Digital Marketing">
+                        <label class="form-check-label" for="digitalmarketing-checkbox">Digital Marketing</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" id="webdesign-checkbox" value="Web Design">
+                        <label class="form-check-label" for="webdesign-checkbox">Web Design</label>
+                    </div>
                     <div class="invalid-feedback">
                         Please choose one option.
                     </div>
@@ -325,7 +328,7 @@
                 </div>
             </div>
             <br>
-            <a class="btn btn-primary active" role="button" name="submit" action="submit">Submit</a>
+            <input class="btn btn-sm btn-primary active" role="button" name="submit" value="Submit">
         </form>
     </div>
     <br>
