@@ -274,35 +274,34 @@
         <h1 style="text-align:center" id="contactmeHeading">Contact Me</h1>
         <br>
         <form class="needs-validation" method="POST" action="https://formspree.io/pranavrpalkar@gmail.com" id="contact-form" role="form" novalidate>
-            <div class="messages"></div>
             <div class="form-row">
                 <div class="col-4 mb-3">
                     <label for="firstname">First name</label>
                     <input type="text" name="firstname" class="form-control" id="firstname" value="" required>
-                    <div class="invalid-feedback">
+                    <div class="invalid-feedback" name="invalid-feedback">
                         Please provide a first name.
                     </div>
-                    <div class="valid-feedback">
+                    <div class="valid-feedback" name="valid-feedback">
                         Looks good!
                     </div>
                 </div>
                 <div class="col-4 mb-3">
                     <label for="lastname">Last name</label>
                     <input type="text" name="lastname" class="form-control" id="lastname" value="" required>
-                    <div class="invalid-feedback">
+                    <div class="invalid-feedback" name="invalid-feedback">
                         Please provide a last name.
                     </div>
-                    <div class="valid-feedback">
+                    <div class="valid-feedback" name="valid-feedback">
                         Looks good!
                     </div>
                 </div>
                 <div class="col-4 mb-3">
-                    <label for="emailid">Email</label>
-                    <input type="email" name="email" class="form-control" id="emailid" value="" required>
-                    <div class="invalid-feedback">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="form-control" id="email" value="" required>
+                    <div class="invalid-feedback" name="invalid-feedback">
                         Please provide a valid email address.
                     </div>
-                    <div class="valid-feedback">
+                    <div class="valid-feedback" name="valid-feedback">
                         Looks good!
                     </div>
                 </div>
@@ -312,17 +311,17 @@
                     <label for="requirement">Type of requirement</label>
                     <br>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="digitalmarketing-checkbox" value="Digital Marketing">
+                        <input class="form-check-input" type="checkbox" name="checkbox" id="digitalmarketing-checkbox" value="Digital Marketing">
                         <label class="form-check-label" for="digitalmarketing-checkbox">Digital Marketing</label>
                     </div>
                     <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="webdesign-checkbox" value="Web Design">
+                        <input class="form-check-input" type="checkbox" name="checkbox" id="webdesign-checkbox" value="Web Design">
                         <label class="form-check-label" for="webdesign-checkbox">Web Design</label>
                     </div>
-                    <div class="invalid-feedback">
-                        Please choose one option.
+                    <div class="invalid-feedback" name="invalid-feedback">
+                        Please choose at least one option.
                     </div>
-                    <div class="valid-feedback">
+                    <div class="valid-feedback" name="valid-feedback">
                         Looks good!
                     </div>
                 </div>
