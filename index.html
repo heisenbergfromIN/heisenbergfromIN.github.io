@@ -16,7 +16,7 @@
     <title>Spaced Out</title>
     <style>
         body {
-            background-color: black;
+            background-color: #212121;
             color: white;
         }
         
@@ -70,7 +70,7 @@
             bottom: 20px;
             right: 30px;
             z-index: 99;
-            font-size: 18px;
+            font-size: 20px;
             border: none;
             outline: none;
             color: white;
@@ -79,6 +79,10 @@
         
         #scrollBtn:hover {
             background-color: #555;
+        }
+        
+        #modalclose-button {
+            color: white
         }
         
         h1 {
@@ -92,11 +96,24 @@
         .card-img-top {
             max-height: 30em;
         }
+        
+        .btn-primary {
+            background-color: #0288d1;
+            border: none;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0288d1;
+        }
+        
+        .modal-content {
+            background-color: #212121;
+        }
     </style>
 </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar-wrapper">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black" id="navbar-wrapper">
         <a class="navbar-brand" href="#page-top">Spaced Out</a>
         <a class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -148,15 +165,16 @@
                 <p class="card-text">Summarized the different marketing campaigns executed and reflected on the results. Evaluated the ROI of the campaigns, compared the results across platforms, then formulated recommendations for future marketing action and budget allocation.
                     View my Udacity profile below to see the projects.</p>
                 <a href="https://profiles.udacity.com/p/9709879601" class="btn btn-dark">View Profile</a>
+                <a href="https://printer.udacity.com/certificate/nd018" class="btn btn-dark">View Certificate</a>
             </div>
         </div>
         <br>
         <h4 class="text-muted">Web Design</h4>
         <br>
         <div class="card mx-auto">
-            <img class="card-img-top img-fluid" src="/img/webdesign-card.jpg" alt="My website project">
+            <img class="card-img-top img-fluid" src="/img/landingpage-cover.jpg" alt="Spaced Out website">
             <div class="card-body">
-                <h5 class="card-title"> My Website</h5>
+                <h5 class="card-title"> Spaced Out</h5>
                 <p class="card-text">Used HTML5, CSS3, and Bootstrap to build a personal website, which you are viewing right now. Take a look at the source on GitHub.</p>
                 <a href="https://github.com/heisenbergfromIN/heisenbergfromIN.github.io" class="btn btn-dark">View Source</a>
             </div>
@@ -304,7 +322,7 @@
                 </div>
             </div>
             <br>
-            <input class="btn btn-sm btn-primary active" type="submit" name="submit" value="Submit">
+            <input class="btn btn-sm btn-primary" type="submit" name="submit" value="Submit">
         </form>
     </div>
     <br>
@@ -316,11 +334,11 @@
             <button class="btn btn-link" data-toggle="modal" data-target="#licensesModal">Open-source licenses</button>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="https://instagram.com/heisenbergfromindia"><i class="fab fa-instagram" alt="Instagram link"></i>
+            <a class="nav-link" href="https://instagram.com/heisenbergfromindia"><i class="fab fa-instagram" alt="Instagram link" style="color:rgb(175, 26, 71)"></i>
             </a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="https://github.com/heisenbergfromin"><i class="fab fa-github" alt="GitHub link"></i>
+            <a class="nav-link" href="https://github.com/heisenbergfromin"><i class="fab fa-github" alt="GitHub link" style="color:black"></i>
             </a>
         </li>
 
@@ -332,8 +350,8 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="licensesModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h5 class="modal-title" id="licensesModalLongTitle">Open-source licenses</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="modalclose-button">
             <span aria-hidden="true">&times;</span>
           </button>
                 </div>
@@ -353,13 +371,13 @@
 
     <!-- Scroll-to-top FAB starts-->
 
-    <a class="btn btn-primary btn-lg rounded-circle" href="#page-top" id="scrollBtn"><i class="fas fa-angle-up"></i></a>
+    <a class="btn btn-secondary btn-lg rounded-circle" href="#page-top" id="scrollBtn"><i class="fas fa-angle-up"></i></a>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script asnyc src="./js/jquery-3.3.1.min.js"></script>
-    <script async src="./js/bootstrap.bundle.min.js "></script>
-    <script async src="./js/smooth-scrolling.js"></script>
+    <script asnyc defer src="./js/jquery-3.3.1.min.js"></script>
+    <script async defer src="./js/bootstrap.bundle.min.js "></script>
+    <script async defer src="./js/smooth-scrolling.js"></script>
 </body>
 
 </html>
