@@ -45,7 +45,7 @@ window.onscroll = function() {
 };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+    if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
         document.getElementById("scrollBtn").style.display = "block";
     } else {
         document.getElementById("scrollBtn").style.display = "none";
