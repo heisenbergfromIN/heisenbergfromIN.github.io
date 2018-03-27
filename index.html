@@ -81,12 +81,20 @@
             background-color: #555;
         }
         
-        #modalclose-button {
+        button.close {
+            color: white
+        }
+        
+        button.close:hover {
             color: white
         }
         
         h1 {
             color: white;
+        }
+        
+        h5.display-5 {
+            color: whitesmoke;
         }
         
         .card {
@@ -148,7 +156,7 @@
         <br>
         <br>
         <h2 class="display-4 my-5">Welcome to Spaced Out</h2>
-        <h5 class="display-5 my-5">We design responsive websites and help you get your business online</h5>
+        <h5 class="display-5 my-5 font-weight-light">We design responsive websites and help you get your business online</h5>
         <a href="#projectsHeading" class="btn btn-primary btn-lg rounded-circle my-5" id="viewprojects-button"><i class="fas fa-angle-down"></i></a>
     </div>
 
@@ -165,7 +173,7 @@
                 <p class="card-text">Summarized the different marketing campaigns executed and reflected on the results. Evaluated the ROI of the campaigns, compared the results across platforms, then formulated recommendations for future marketing action and budget allocation.
                     View my Udacity profile below to see the projects.</p>
                 <a href="https://profiles.udacity.com/p/9709879601" class="btn btn-dark">View Profile</a>
-                <a href="https://printer.udacity.com/certificate/nd018" class="btn btn-dark">View Certificate</a>
+                <button data-target="#nanodegree-modal" class="btn btn-dark" data-toggle="modal" role="button">View Certificate</button>
             </div>
         </div>
         <br>
@@ -189,13 +197,13 @@
         <div class="container-fluid">
             <div class="row" id="education-heading">
                 <div class="col">
-                    <h4>Where</h4>
+                    <h4 class="font-weight-light">Where</h4>
                 </div>
                 <div class="col">
-                    <h4> What</h4>
+                    <h4 class="font-weight-light"> What</h4>
                 </div>
                 <div class="col">
-                    <h4> When</h4>
+                    <h4 class="font-weight-light"> When</h4>
                 </div>
             </div>
             <br>
@@ -379,7 +387,28 @@
                     <br>
                     <a class="d-block" href="https://unsplash.com/photos/OYFHT4X5isg">MadWanetures cover photo - Dan Otis</a>
                     <br>
-                    <p class="text-muted">Note: The copyrights to all the icons in the Skills section belong to their respective owners.</p>
+                    <p class="text-muted">Note: The copyrights to most of the logos on the website belong to their respective owners.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Nanodegree Certificate Modal -->
+
+    <div class="modal fade" id="nanodegree-modal" tabindex="-1" role="dialog" aria-labelledby="Digital Marketing Nanodegree certificate" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="nanodegreemodal-title">DMND Certificate</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="/img/nanodegree-certificate.jpg">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
