@@ -16,23 +16,27 @@
     <title>Spaced Out</title>
     <style>
         body {
-            background-color: black;
+            background-color: #212121;
             color: white;
         }
         
         #cover {
             color: lightcyan;
             text-align: center;
-            background-image: url("/img/landingpage-cover.jpg");
+            background-image: url("/img/cover.jpg");
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 40em;
+            height: 36rem;
         }
         
         #projects {
             text-align: center;
             color: black;
+        }
+        
+        #whyus {
+            text-align: center;
         }
         
         #education {
@@ -65,12 +69,12 @@
         }
         
         #scrollBtn {
-            display: inline-block;
+            display: none;
             position: fixed;
             bottom: 20px;
             right: 30px;
             z-index: 99;
-            font-size: 18px;
+            font-size: 20px;
             border: none;
             outline: none;
             color: white;
@@ -79,6 +83,14 @@
         
         #scrollBtn:hover {
             background-color: #555;
+        }
+        
+        button.close {
+            color: white
+        }
+        
+        button.close:hover {
+            color: white
         }
         
         h1 {
@@ -92,11 +104,24 @@
         .card-img-top {
             max-height: 30em;
         }
+        
+        .btn-primary {
+            background-color: #0288d1;
+            border: none;
+        }
+        
+        .btn-primary:hover {
+            background-color: #343a40;
+        }
+        
+        .modal-content {
+            background-color: #212121;
+        }
     </style>
 </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar-wrapper">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black" id="navbar-wrapper">
         <a class="navbar-brand" href="#page-top">Spaced Out</a>
         <a class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -121,42 +146,49 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#contactmeHeading">Contact Me</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#whyusHeading">Why us?</a>
+                </li>
             </ul>
         </div>
     </nav>
 
     <!-- Cover section -->
+
     <div class="container-fluid mb-4" id="cover">
         <br>
         <br>
         <br>
         <h2 class="display-4 my-5">Welcome to Spaced Out</h2>
-        <h5 class="display-5 my-5">We design responsive websites and help you get your business online</h5>
+        <h5 class="display-5 my-5 font-weight-light">We design responsive websites and help you get your business online</h5>
         <a href="#projectsHeading" class="btn btn-primary btn-lg rounded-circle my-5" id="viewprojects-button"><i class="fas fa-angle-down"></i></a>
     </div>
+    <br>
 
     <!-- Projects section -->
-    <div class="container-fluid" id="projects">
-        <h1 id="projectsHeading">Projects</h1>
+
+    <div class="container" id="projects">
+        <h1 class="font-weight-light" id="projectsHeading">Projects</h1>
         <br>
         <h4 class="text-muted">Digital Marketing</h4>
         <br>
         <div class="card mx-auto">
-            <img class="card-img-top img-fluid" src="/img/Projects.jpeg" alt="Digital Marketing Nanodegree projects">
+            <img class="card-img-top img-fluid" src="/img/Projects.jpg" alt="Digital Marketing Nanodegree projects">
             <div class="card-body">
                 <h5 class="card-title"> Udacity Digital Marketing Nanodegree</h5>
                 <p class="card-text">Summarized the different marketing campaigns executed and reflected on the results. Evaluated the ROI of the campaigns, compared the results across platforms, then formulated recommendations for future marketing action and budget allocation.
                     View my Udacity profile below to see the projects.</p>
                 <a href="https://profiles.udacity.com/p/9709879601" class="btn btn-dark">View Profile</a>
+                <button data-target="#nanodegree-modal" class="btn btn-dark" data-toggle="modal" role="button">View Certificate</button>
             </div>
         </div>
         <br>
         <h4 class="text-muted">Web Design</h4>
         <br>
         <div class="card mx-auto">
-            <img class="card-img-top img-fluid" src="/img/webdesign-card.jpg" alt="My website project">
+            <img class="card-img-top img-fluid" src="/img/cover.jpg" alt="Spaced Out website">
             <div class="card-body">
-                <h5 class="card-title"> My Website</h5>
+                <h5 class="card-title"> Spaced Out</h5>
                 <p class="card-text">Used HTML5, CSS3, and Bootstrap to build a personal website, which you are viewing right now. Take a look at the source on GitHub.</p>
                 <a href="https://github.com/heisenbergfromIN/heisenbergfromIN.github.io" class="btn btn-dark">View Source</a>
             </div>
@@ -164,20 +196,88 @@
     </div>
     <br>
 
+    <!-- Why us? -->
+
+    <div class="container" id="whyus">
+        <h1 class="font-weight-light" id="whyusHeading">Why Spaced Out?</h1>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading text-primary">Mobile first
+                    <br>
+                    <span class="text-muted font-weight-light">Targeting the ever-growing mobile users </span></h2>
+                <br>
+                <p class="lead">Marketing your business can be hard and it can definitely get harder if you don't target the right users. We, at Spaced Out, take a <mark class="bg-primary">mobile first approach</mark> with everything we do - SEO, ad campaigns, content
+                    marketing, and web user experience design.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" src="/img/mobilefirst-cover.jpg" alt="Mobile first cover image">
+            </div>
+        </div>
+        <br>
+        <div class="alert alert-primary" role="alert">
+            Quick stat: As of January 2018, almost 80% of the Internet users in India browse on mobile.
+            <br>
+            <a href="https://www.statista.com/statistics/430830/share-of-mobile-internet-traffic-countries/">Source</a>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading text-primary"> User experience first
+                    <br>
+                    <span class="text-muted font-weight-light">Responsive design that works well on different screen sizes.</span></h2>
+                <br>
+                <p class="lead">User experience is at the nexus of what we do to acheive our goals, and yours too. We don't believe in unrefined experiences that are either too barebones or too novel. Focusing on users <mark class="bg-primary"> coming online for the first time</mark>                    is a need of the decade. We do exactly that.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" src="/img/uxfirst-cover.jpg" alt="UX first cover image">
+            </div>
+        </div>
+        <br>
+        <div class="alert alert-primary" role="alert">
+            Quick stat: 53% of mobile site visitors will leave a site if it takes more than three seconds to load.
+            <br>
+            <a href="https://developers.googleblog.com/2017/04/introducing-mobile-sites-certification.html">Source</a>
+        </div>
+        <hr class="featurette-divider">
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading text-primary">Holistic marketing
+                    <br>
+                    <span class="text-muted font-weight-light">Marketing to people at the right place and the right time.</span></h2>
+                <br>
+                <p class="lead">Marketing to people on the Internet is not <mark class="bg-primary">one-size-fits-all</mark>. Depending on your marketing goals, various audiences need to be targeted at different points in their online journey through different channels.
+                    We know that digital marketing is a holistic approach that needs to be seen <mark class="bg-primary">like a jigsaw puzzle</mark>.</p>
+            </div>
+            <div class="col-md-5">
+                <img class="featurette-image img-fluid mx-auto" src="/img/holisticmarketing-cover.jpg" alt="Generic placeholder image">
+            </div>
+        </div>
+        <br>
+        <div class="alert alert-primary" role="alert">
+            Quick stat: 75% of smartphone owners turn to a search engine first to address their immediate needs.
+            <br>
+            <a href="https://www.thinkwithgoogle.com/consumer-insights/ageofassistance/">Source</a>
+        </div>
+    </div>
+    <br>
+
     <!-- Education -->
-    <div class="container-fluid" id="education">
-        <h1 id="educationHeading"> Education</h1>
+
+    <div class="container" id="education">
+        <h1 class="font-weight-light" id="educationHeading"> Education</h1>
         <br>
         <div class="container-fluid">
             <div class="row" id="education-heading">
                 <div class="col">
-                    <h4>Where</h4>
+                    <h4 class="font-weight-light">Where</h4>
                 </div>
                 <div class="col">
-                    <h4> What</h4>
+                    <h4 class="font-weight-light"> What</h4>
                 </div>
                 <div class="col">
-                    <h4> When</h4>
+                    <h4 class="font-weight-light"> When</h4>
                 </div>
             </div>
             <br>
@@ -186,7 +286,7 @@
                     <h6>Udacity</h6>
                 </div>
                 <div class="col">
-                    <h6> Digital Marketing Nanodegree</h6>
+                    <h6> Certified Digital Marketer</h6>
                 </div>
                 <div class="col">
                     <h6> 2017</h6>
@@ -219,10 +319,12 @@
             <br>
         </div>
     </div>
+    <br>
 
     <!-- Skills -->
-    <div class="container-fluid" id="skills">
-        <h1 id="skillsHeading">Skills</h1>
+
+    <div class="container" id="skills">
+        <h1 class="font-weight-light" id="skillsHeading">Skills</h1>
         <br>
         <div class="row">
             <div class="col">
@@ -239,13 +341,13 @@
         <br>
         <div class="row">
             <div class="col">
-                <img src="/img/analytics-logo.png" alt="Google Analytics Logo" href="https://www.google.com/analytics/" style="width:6rem">
+                <img src="/img/analytics-logo.png" alt="Google Analytics Logo" href="https://www.google.com/analytics/" style="width:5.5rem">
             </div>
             <div class="col">
                 <i class="fab fa-github fa-3x" alt="GitHub Logo"></i>
             </div>
             <div class="col">
-                <img src="/img/adwords-logo.png" alt="Google AdWords Logo" style="width:3rem">
+                <img src="/img/adwords-logo.png" alt="Google AdWords Logo" style="width:2.9rem">
             </div>
         </div>
     </div>
@@ -253,8 +355,8 @@
 
     <!-- Work Experience -->
 
-    <div class="container-fluid" id="workexperience">
-        <h1 id="workexHeading">Work Experience</h1>
+    <div class="container" id="workexperience">
+        <h1 class="font-weight-light" id="workexHeading">Work Experience</h1>
         <br>
         <div class="card mx-auto">
             <img class="card-img-top img-fluid" src="/img/tbtc-cover.jpg" alt="The Bow Tie Company Logo">
@@ -266,83 +368,81 @@
                 <a href="https://thebowtiecompany.in" class="btn btn-dark" alt="Visit client's website">Visit Website</a>
             </div>
         </div>
+        <br>
+        <div class="card mx-auto">
+            <img class="card-img-top img-fluid" src="/img/madwanetures-cover.jpg" alt="The Bow Tie Company Logo">
+            <div class="card-body">
+                <h5 class="card-title">MadWanetures</h5>
+                <h6>SEO Analyst</h6>
+                <p class="text-muted">February - March 2018</p>
+                <p class="card-text">Performed an SEO audit of the client's website using Lighthouse, Screaming Frog, Google Trends, and Moz. Analysed all the elements on the website to check for missing metadata and alt tags. Improved website loading time by deferring render-blocking
+                    Javascript. Optimised image resources and iframes. Significantly improved the website's Best Practices, Accessibility, and SEO, scores on Lighthouse by making these optimisations. Suggested keywords to target potential visitors and
+                    improved the search engine ranking on Google Search.</p>
+                <a href="https://madwanetures.com" class="btn btn-dark" alt="Visit client's website">Visit Website</a>
+            </div>
+        </div>
     </div>
+    <br>
 
     <!-- Contact Me -->
-    <br>
-    <div class="container-fluid" id="contactme">
-        <h1 style="text-align:center" id="contactmeHeading">Contact Me</h1>
+
+    <div class="container" id="contactme">
+        <h1 class="font-weight-light" style="text-align:center" id="contactmeHeading">Contact Me</h1>
         <br>
-        <form class="needs-validation" method="POST" action="contact-form.php" id="contact-form" role="form" novalidate>
-            <div class="messages"></div>
+        <form method="POST" action="https://formspree.io/pranavrpalkar@gmail.com" id="contact-form" role="form">
             <div class="form-row">
                 <div class="col-4 mb-3">
                     <label for="firstname">First name</label>
-                    <input type="text" name="firstname" class="form-control" id="firstname" placeholder="First name" value="" required>
-                    <div class="invalid-feedback">
-                        Please provide a first name.
-                    </div>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
+                    <input type="text" name="firstname" class="form-control" id="firstname" value="" required>
                 </div>
                 <div class="col-4 mb-3">
                     <label for="lastname">Last name</label>
-                    <input type="text" name="lastname" class="form-control" id="lastname" placeholder="Last name" value="" required>
-                    <div class="invalid-feedback">
-                        Please provide a last name.
-                    </div>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
+                    <input type="text" name="lastname" class="form-control" id="lastname" value="" required>
                 </div>
                 <div class="col-4 mb-3">
-                    <label for="emailid">Email</label>
-                    <input type="email" name="emailid" class="form-control" id="emailid" placeholder="Email" required>
-                    <div class="invalid-feedback">
-                        Please provide a valid email address.
-                    </div>
-                    <div class="valid-feedback">
-                        Looks good!
-                    </div>
+                    <label for="email">Email</label>
+                    <input type="email" name="reply_to" class="form-control" id="email" value="" required>
                 </div>
             </div>
             <div class="form-row">
                 <div class="col">
                     <label for="requirement">Type of requirement</label>
-                    <select class="form-control" name="requirement" id="requirement" required>
-                      <option value="">Choose...</option>
-                      <option value="digitalmarketing">Digital Marketing</option>
-                      <option value="webdesign">Web Design</option>
-                      <option value="DMandWD"> Digital Marketing & Web Design</option>             
-                    </select>
-                    <div class="invalid-feedback">
-                        Please choose one option.
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="checkbox" id="digitalmarketing-checkbox" value="Digital Marketing">
+                        <label class="form-check-label" for="digitalmarketing-checkbox">Digital Marketing</label>
                     </div>
-                    <div class="valid-feedback">
-                        Looks good!
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="checkbox" name="checkbox" id="webdesign-checkbox" value="Web Design">
+                        <label class="form-check-label" for="webdesign-checkbox">Web Design</label>
                     </div>
+                    <input type="hidden" name="_subject" value="New requirement received!" />
                 </div>
             </div>
             <br>
-            <a href="./php/contact-form.php" class="btn btn-primary active" role="button" name="submit" action="submit">Submit</a>
+            <input class="btn btn-sm btn-primary" type="submit" name="submit" value="Submit">
         </form>
     </div>
     <br>
 
     <!-- Fixed footer -->
 
-    <nav class="navbar navbar-bottom navbar-dark bg-dark">
-        <div class="navbar-nav">
-            <a class="nav-item nav-link" data-toggle="modal" data-target="#licensesModal"> Open-source licenses <span class="sr-only">(current)</span></a>
-            <span class="navbar-text">
-                <a href="https://instagram.com/heisenbergfromindia"><i class="fab fa-instagram" alt="Instagram link"></i>
-                </a>
-            <a href="https://github.com/heisenbergfromin"><i class="fab fa-github" alt="GitHub link"></i>
+    <ul class="nav justify-content-center bg-dark">
+
+        <li class="nav-item">
+            <a class="nav-link text-muted" href="https://instagram.com/heisenbergfromindia"><i class="fab fa-instagram" alt="Instagram link" style="color:rgb(175, 26, 71)"></i> 
+                @heisenbergfromindia
             </a>
-            </span>
-        </div>
-    </nav>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-muted" href="https://github.com/heisenbergfromIN"><i class="fab fa-github" alt="GitHub link" style="color:black"></i>
+            @heisenbergfromIN
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="btn btn-link text-muted" data-toggle="modal" data-target="#licensesModal"><i class="fab fa-osi" style="color:black"></i> Open-source licenses</a>
+        </li>
+    </ul>
 
     <!-- Open-source licenses modal -->
 
@@ -350,56 +450,63 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="licensesModalLongTitle">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h5 class="modal-title" id="licensesModalLongTitle">Open-source licenses</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="modalclose-button">
             <span aria-hidden="true">&times;</span>
           </button>
                 </div>
                 <div class="modal-body">
                     <a class="d-block" href="https://github.com/twbs/bootstrap/blob/master/LICENSE">CSS framework - Bootstrap</a>
                     <br>
-                    <a class="d-block" href="https://unsplash.com/@nasa">Cover photo - NASA</a>
+                    <a class="d-block" href="https://unsplash.com/photos/f7YQo-eYHdM">Cover photo - Bryan Goff</a>
                     <br>
                     <a class="d-block" href="https://fontawesome.com/icons">Fonts - Font Awesome</a>
+                    <br>
+                    <a class="d-block" href="https://unsplash.com/photos/OYFHT4X5isg">MadWanetures cover photo - Dan Otis</a>
+                    <br>
+                    <a class="d-block" href="https://unsplash.com/photos/gcsNOsPEXfs">Mobile first cover photo - William Iven</a>
+                    <br>
+                    <a class="d-block" href="https://unsplash.com/photos/cqFKhqv6Ong">UX first cover photo - Rob Hampson</a>
+                    <br>
+                    <a class="d-block" href="https://unsplash.com/photos/t3gHKECmB3I">Holistic marketing cover photo - Gabrielle Cepella</a>
+                    <br>
+                    <p class="text-muted">Note: The copyrights to most of the logos on the website belong to their respective owners.</p>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
 
+    <!-- Nanodegree Certificate Modal -->
+
+    <div class="modal fade" id="nanodegree-modal" tabindex="-1" role="dialog" aria-labelledby="Digital Marketing Nanodegree certificate" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="nanodegreemodal-title">DMND Certificate</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body">
+                    <img class="img-fluid" src="/img/nanodegree-certificate.jpg">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Scroll-to-top FAB starts-->
 
-    <a class="btn btn-primary btn-lg rounded-circle" href="#page-top" id="scrollBtn"><i class="fas fa-angle-up"></i></a>
-
-
-    <!-- JavaScript for disabling form submissions if there are invalid fields -->
-    <script>
-        (function() {
-            'use strict';
-            window.addEventListener('load', function() {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function(form) {
-                    form.addEventListener('submit', function(event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
-    </script>
+    <a class="btn btn-secondary btn-lg rounded-circle" href="#page-top" id="scrollBtn"><i class="fas fa-angle-up"></i></a>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script asnyc src="./js/jquery-3.3.1.min.js"></script>
-
     <script async src="./js/bootstrap.bundle.min.js "></script>
     <script async src="./js/smooth-scrolling.js"></script>
 </body>
