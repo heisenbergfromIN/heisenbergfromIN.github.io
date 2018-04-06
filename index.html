@@ -104,6 +104,10 @@
         .modal-content {
             background-color: #212121;
         }
+        
+        img:not([src]):not([srcset]) {
+            visibility: hidden;
+        }
     </style>
 </head>
 
@@ -161,7 +165,7 @@
         <h4 class="text-muted">Digital Marketing</h4>
         <br>
         <div class="card mx-auto">
-            <img class="card-img-top img-fluid" src="/img/Projects.webp" alt="Digital Marketing Nanodegree projects">
+            <img class="card-img-top rounded img-fluid" data-src="/img/Projects.webp" alt="Digital Marketing Nanodegree projects">
             <div class="card-body">
                 <h5 class="card-title"> Udacity Digital Marketing Nanodegree</h5>
                 <p class="card-text">Summarized the different marketing campaigns executed and reflected on the results. Evaluated the ROI of the campaigns, compared the results across platforms, then formulated recommendations for future marketing action and budget allocation.
@@ -174,7 +178,7 @@
         <h4 class="text-muted">Web Design</h4>
         <br>
         <div class="card mx-auto">
-            <img class="card-img-top img-fluid" src="/img/cover.webp" alt="Spaced Out website">
+            <img class="card-img-top rounded img-fluid" data-src="/img/cover.webp" alt="Spaced Out website">
             <div class="card-body">
                 <h5 class="card-title"> Spaced Out</h5>
                 <p class="card-text">Used HTML5, CSS3, and Bootstrap to build an agency website, which you are viewing right now. Take a look at the source on GitHub.</p>
@@ -200,7 +204,7 @@
                 </p>
             </div>
             <div class="col-md-5">
-                <img class="featurette-image img-fluid mx-auto" src="/img/mobilefirst-cover.webp" alt="Mobile first cover image">
+                <img class="featurette-image rounded img-fluid mx-auto" data-src="/img/mobilefirst-cover.webp" alt="Mobile first cover image">
             </div>
         </div>
         <br>
@@ -219,7 +223,7 @@
                 <p class="lead">User experience is at the nexus of what we do to acheive our goals, and yours too. We don't believe in unrefined experiences that are either too barebones or too novel. Focusing on users <span class="text-primary"> coming online for the first time</span>                    is a need of the decade. We do exactly that.</p>
             </div>
             <div class="col-md-5">
-                <img class="featurette-image img-fluid mx-auto" src="/img/uxfirst-cover.webp" alt="UX first cover image">
+                <img class="featurette-image rounded img-fluid mx-auto" data-src="/img/uxfirst-cover.webp" alt="UX first cover image">
             </div>
         </div>
         <br>
@@ -239,7 +243,7 @@
                     We know that digital marketing is a holistic approach that needs to be seen <span class="text-primary">like a jigsaw puzzle</span>.</p>
             </div>
             <div class="col-md-5">
-                <img class="featurette-image img-fluid mx-auto" src="/img/holisticmarketing-cover.webp" alt="Holistic marketing cover image">
+                <img class="featurette-image rounded img-fluid mx-auto" data-src="/img/holisticmarketing-cover.webp" alt="Holistic marketing cover image">
             </div>
         </div>
         <br>
@@ -260,7 +264,7 @@
                     decisions by not depending too much on either data or intuition, <span class="text-primary">but a blend of both</span>.</p>
             </div>
             <div class="col-md-5">
-                <img class="featurette-image img-fluid mx-auto" src="/img/datadriven-cover.webp" alt="Data-driven cover image">
+                <img class="featurette-image rounded img-fluid mx-auto" data-src="/img/datadriven-cover.webp" alt="Data-driven cover image">
             </div>
         </div>
         <br>
@@ -285,20 +289,20 @@
                 <i class="fab fa-css3-alt fa-3x" alt="CSS3 Logo" style="color:steelblue"></i>
             </div>
             <div class="col">
-                <img src="/img/bootstrap-stack.png" alt="Bootstrap Logo" style="width:3.5rem">
+                <img data-src="/img/bootstrap-stack.png" alt="Bootstrap Logo" style="width:3.5rem">
             </div>
         </div>
         <br>
         <br>
         <div class="row">
             <div class="col">
-                <img src="/img/analytics-logo.png" alt="Google Analytics Logo" href="https://www.google.com/analytics/" style="width:5.5rem">
+                <img data-src="/img/analytics-logo.png" alt="Google Analytics Logo" href="https://www.google.com/analytics/" style="width:5.5rem">
             </div>
             <div class="col">
                 <i class="fab fa-github fa-3x" alt="GitHub Logo"></i>
             </div>
             <div class="col">
-                <img src="/img/adwords-logo.png" alt="Google AdWords Logo" style="width:2.9rem">
+                <img data-src="/img/adwords-logo.png" alt="Google AdWords Logo" style="width:2.9rem">
             </div>
         </div>
     </div>
@@ -310,7 +314,7 @@
         <h1 class="font-weight-light" id="workexHeading">Work Experience</h1>
         <br>
         <div class="card mx-auto">
-            <img class="card-img-top img-fluid" src="/img/tbtc-cover.webp" alt="The Bow Tie Company Logo">
+            <img class="card-img-top rounded img-fluid" data-src="/img/tbtc-cover.webp" alt="The Bow Tie Company Logo">
             <div class="card-body">
                 <h5 class="card-title">The Bow Tie Company</h5>
                 <h6>SEO Analyst</h6>
@@ -321,7 +325,7 @@
         </div>
         <br>
         <div class="card mx-auto">
-            <img class="card-img-top img-fluid" src="/img/madwanetures-cover.webp" alt="The Bow Tie Company Logo">
+            <img class="card-img-top rounded img-fluid" data-src="/img/madwanetures-cover.webp" alt="The Bow Tie Company Logo">
             <div class="card-body">
                 <h5 class="card-title">MadWanetures</h5>
                 <h6>SEO Analyst</h6>
@@ -342,7 +346,7 @@
         <br>
         <div class="card bg-dark mx-auto">
             <div class="card-body">
-                <img src="/img/my photo.jpg" class=" img-fluid rounded-circle" alt="Spaced Out team photo" id="team-photo">
+                <img data-src="/img/my photo.jpg" class=" img-fluid rounded-circle" alt="Spaced Out team photo" id="team-photo">
                 <br><br>
                 <h5 class="card-title font-weight-normal">Pranav Palkar</h5>
                 <br>
@@ -481,7 +485,7 @@
           </button>
                 </div>
                 <div class="modal-body">
-                    <img class="img-fluid" src="/img/nanodegree-certificate.jpg">
+                    <img class="img-fluid" data-src="/img/nanodegree-certificate.webp">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
@@ -558,6 +562,11 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script asnyc src="./js/jquery-3.3.1.min.js"></script>
     <script async src="./js/bootstrap.bundle.min.js "></script>
+    <script src="/js/lazyload.min.js"></script>
+    <script>
+        var myLazyLoad = new LazyLoad();
+        new LazyLoad();
+    </script>
     <script async src="./js/smooth-scrolling.js"></script>
 </body>
 
