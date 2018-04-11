@@ -37,7 +37,8 @@
      inkscape:window-height="837"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     units="mm" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -64,8 +65,8 @@
     <ellipse
        style="opacity:0.25;fill:#008080;fill-opacity:1;stroke-width:0.26458332"
        id="path75"
-       cx="103.56547"
-       cy="128.42262"
+       cx="104.63454"
+       cy="133.76801"
        rx="33.261906"
        ry="34.017857" />
     <path
