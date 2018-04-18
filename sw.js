@@ -36,7 +36,7 @@ self.addEventListener('install', function(e) {
                 '/img/tbtc-cover.webp',
                 '/img/uxfirst-cover.webp',
                 '/img/spacedout-brand.png',
-                '/js/site.js',
+                '/site.js',
                 '/js/bootstrap.bundle.min.js',
                 '/js/lazyload.min.js',
                 '/js/jquery-3.3.1.min.js',
