@@ -7,12 +7,10 @@
     <meta name="viewport" content="width=device-width, user-scalable=no" initial-scale="1" />
     <meta name="theme-color" content="#0288d1" />
     <meta name="description" content="We design responsive websites and help you market your business on the Internet">
-    <link rel="manifest" href="manifest.json" />
     <!-- Bootstrap CSS -->
     <link rel="preload" href="/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/css/bootstrap.min.css"></noscript>
     <script defer src="/js/cssrelpreload.min.js"></script>
-    <script defer src="/site.js"></script>
     <title>Spaced Out</title>
     <style>
         body {
@@ -479,6 +477,8 @@
                     <br>
                     <a class="d-block" href="https://www.andreaverlicchi.eu/lazyload/">Lazy-loading script - LazyLoad by Andrea Verlicchi</a>
                     <br>
+                    <a class="d-block" href="https://github.com/TalAter/annyang/blob/master/LICENSE">Service worker script - UpUp by Tal Ater</a>
+                    <br>
                     <a class="d-block" href="https://unsplash.com/photos/f7YQo-eYHdM">Cover photo - Bryan Goff</a>
                     <br>
                     <a class="d-block" href="https://fontawesome.com/icons">Fonts - Font Awesome</a>
@@ -494,6 +494,7 @@
                     <a class="d-block" href="https://unsplash.com/photos/PkbZahEG2Ng">Data-driven cover photo - Tobias Fischer</a>
                     <br>
                     <p class="text-muted">Note: The copyrights to all the logos and images on the website belong to their respective owners unless stated otherwise.</p>
+
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
@@ -596,6 +597,35 @@
     <script>
         var myLazyLoad = new LazyLoad();
         new LazyLoad();
+    </script>
+    <script async src="/upup.min.js"></script>
+    <script>
+        UpUp.start({
+            'cache-version': 'v1',
+            'content-url': '/index.html',
+            'assets': ['/manifest.json',
+                '/img/cover.webp',
+                '/img/adwords-logo.webp',
+                '/img/analytics-logo.webp',
+                '/img/bootstrap-stack.webp',
+                '/img/datadriven-cover.webp',
+                '/img/holisticmarketing-cover.webp',
+                '/img/madwanetures-cover.webp',
+                '/img/mobilefirst-cover.webp',
+                '/img/my photo.webp',
+                '/img/nanodegree-certificate.webp',
+                '/img/projects.webp',
+                '/img/tbtc-cover.webp',
+                '/img/uxfirst-cover.webp',
+                '/img/spacedout-brand.png',
+                '/js/bootstrap.bundle.min.js',
+                '/js/lazyload.min.js',
+                '/js/jquery-3.3.1.min.js',
+                '/js/fontawesome-all.min.js',
+                '/js/smooth-scrolling.js',
+                '/css/bootstrap.min.css',
+            ]
+        });
     </script>
     <script async src="./js/smooth-scrolling.js"></script>
     <!-- Font Awesome Icons -->

@@ -13,7 +13,7 @@
 // limitations under the License.
 
 
-// version: 15.0
+// version: Coming soon!
 
 self.addEventListener('install', function(e) {
     e.waitUntil(
