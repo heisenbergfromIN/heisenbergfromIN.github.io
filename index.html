@@ -598,13 +598,14 @@
         var myLazyLoad = new LazyLoad();
         new LazyLoad();
     </script>
-    <script async src="/upup.min.js"></script>
+    <script src="/upup.min.js"></script>
     <script>
         UpUp.start({
             'cache-version': 'v1',
             'content-url': '/index.html',
-            'service-worker-url': 'upup.sw.min.js',
+            'service-worker-url': '/upup.sw.min.js',
             'assets': [
+                '/manifest.json',
                 '/img/cover.webp',
                 '/img/adwords-logo.webp',
                 '/img/analytics-logo.webp',
