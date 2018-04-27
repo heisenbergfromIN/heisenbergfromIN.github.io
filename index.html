@@ -170,14 +170,14 @@
 
     <!-- Cover section -->
 
-    <div class="container-fluid mb-4" id="cover">
+    <header class="container-fluid mb-4" id="cover">
         <br>
         <br>
         <br>
         <h2 class="display-4 my-5">Welcome to Spaced Out</h2>
         <h5 class="display-5 my-5 font-weight-light text-light">We design responsive websites for your small business and do the online marketing for you</h5>
         <a href="#projectsHeading" class="btn btn-info btn-lg rounded-circle my-5" id="viewprojects-button" aria-label="View Projects"><i class="fas fa-angle-down"></i></a>
-    </div>
+    </header>
     <br>
 
     <!-- Projects section -->
@@ -401,7 +401,7 @@
     <div class="container" id="contactus">
         <h1 class="font-weight-light" style="text-align:center" id="contactusHeading">Contact Us</h1>
         <br>
-        <h5 class="text-secondary font-weight-light display-5">Get in touch with us. We will be happy to know your requirements and help you!</h5>
+        <h5 class="text-secondary font-weight-bold display-5">Get in touch with us. We will be happy to know your requirements and help you!</h5>
         <br>
         <form method="POST" action="" id="contact-form" role="form">
             <div class="form-row">
@@ -450,12 +450,12 @@
         <nav>
             <ul class="nav justify-content-center">
                 <li class="nav-item">
-                    <a class="nav-link text-muted" href="https://github.com/heisenbergfromIN"><i class="fab fa-2x fa-github" alt=" View GitHub" style="color:white"></i>
+                    <a title="GitHub Profile" class="nav-link text-muted" href="https://github.com/heisenbergfromIN"><i class="fab fa-2x fa-github" alt=" View GitHub" style="color:white"></i>
             
             </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link text-muted" href="https://t.me/heisenbergfromIN"><i class="fab fa-2x fa-telegram" alt="Contact us on Telegram" style="color:steelblue"></i>
+                    <a title="Contact us on Telegram" class="nav-link text-muted" href="https://t.me/heisenbergfromIN"><i class="fab fa-2x fa-telegram" alt="Contact us on Telegram" style="color:steelblue"></i>
             
             </a>
                 </li>
@@ -603,15 +603,15 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script asnyc src="./js/jquery-3.3.1.min.js"></script>
-    <script async src="./js/bootstrap.bundle.min.js "></script>
-    <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
+    <script defer src="./js/jquery-3.3.1.min.js"></script>
+    <script defer src="./js/bootstrap.bundle.min.js "></script>
+    <script defer src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
     <script src="/js/lazyload.min.js"></script>
     <script>
         var myLazyLoad = new LazyLoad();
         new LazyLoad();
     </script>
-    <script src="/upup.min.js"></script>
+    <script defer src="/upup.min.js"></script>
     <script>
         UpUp.start({
             'cache-version': 'v3',
@@ -642,7 +642,7 @@
             ]
         });
     </script>
-    <script async src="./js/smooth-scrolling.js"></script>
+    <script defer src="./js/smooth-scrolling.js"></script>
     <!-- Font Awesome Icons -->
     <script defer src="./js/fontawesome-all.min.js"></script>
 </body>
