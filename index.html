@@ -19,6 +19,8 @@
     <meta name="msapplication-config" content="/icons/browserconfig.xml">
     <!--PWA theme-->
     <meta name="theme-color" content="#000000">
+    <!-- Intersection Observer polyfill -->
+    <script src="/js/intersection-observer/intersection-observer.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="preload" href="/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/css/bootstrap.min.css"></noscript>
@@ -605,7 +607,6 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script defer src="./js/jquery-3.3.1.min.js"></script>
     <script defer src="./js/bootstrap.bundle.min.js "></script>
-    <script defer src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
     <script src="/js/lazyload.min.js"></script>
     <script>
         var myLazyLoad = new LazyLoad();
