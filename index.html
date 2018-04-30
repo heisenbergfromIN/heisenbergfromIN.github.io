@@ -20,7 +20,7 @@
     <!--PWA theme-->
     <meta name="theme-color" content="#000000">
     <!-- Intersection Observer polyfill -->
-    <script src="/js/intersection-observer/intersection-observer.min.js"></script>
+    <script defer src="/js/intersection-observer/intersection-observer.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="preload" href="/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/css/bootstrap.min.css"></noscript>
@@ -615,7 +615,7 @@
     <script defer src="/upup.min.js"></script>
     <script>
         UpUp.start({
-            'cache-version': 'v3',
+            'cache-version': 'v4',
             'content-url': '/index.html',
             'service-worker-url': '/upup.sw.min.js',
             'assets': [
