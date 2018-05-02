@@ -19,8 +19,6 @@
     <meta name="msapplication-config" content="/icons/browserconfig.xml">
     <!--PWA theme-->
     <meta name="theme-color" content="#000000">
-    <!-- Intersection Observer polyfill -->
-    <script defer src="/js/intersection-observer/intersection-observer.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="preload" href="/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/css/bootstrap.min.css"></noscript>
@@ -604,10 +602,13 @@
     <a class="btn btn-secondary btn-lg rounded-circle" href="#page-top" id="scrollBtn"><i class="fas fa-angle-up"></i></a>
 
     <!-- Optional JavaScript -->
-    <script defer src="/js/lazyload.min.js"></script>
+    <!-- Intersection Observer polyfill -->
+    <script defer src="/js/intersection-observer/intersection-observer.min.js"></script>
+
     <script>
         var myLazyLoad = new LazyLoad();
     </script>
+    <script defer src="/js/lazyload.min.js"></script>
     <script src="/upup.min.js"></script>
     <script>
         UpUp.start({
