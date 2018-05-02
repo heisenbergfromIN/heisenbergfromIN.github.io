@@ -20,7 +20,7 @@
     <!--PWA theme-->
     <meta name="theme-color" content="#000000">
     <!-- Intersection Observer polyfill -->
-    <script async src="/js/intersection-observer/intersection-observer.min.js"></script>
+    <script defer src="/js/intersection-observer/intersection-observer.min.js"></script>
     <!-- Bootstrap CSS -->
     <link rel="preload" href="/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/css/bootstrap.min.css"></noscript>
@@ -604,9 +604,6 @@
     <a class="btn btn-secondary btn-lg rounded-circle" href="#page-top" id="scrollBtn"><i class="fas fa-angle-up"></i></a>
 
     <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script defer src="./js/jquery-3.3.1.min.js"></script>
-    <script defer src="./js/bootstrap.bundle.min.js "></script>
     <script defer src="/js/lazyload.min.js"></script>
     <script>
         var myLazyLoad = new LazyLoad();
@@ -643,6 +640,9 @@
             ]
         });
     </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script defer src="./js/jquery-3.3.1.min.js"></script>
+    <script defer src="./js/bootstrap.bundle.min.js "></script>
     <script defer src="./js/smooth-scrolling.js"></script>
     <!-- Font Awesome Icons -->
     <script defer src="./js/fontawesome-all.min.js"></script>
