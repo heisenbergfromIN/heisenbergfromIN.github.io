@@ -19,10 +19,7 @@
     <meta name="msapplication-config" content="/icons/browserconfig.xml">
     <!--PWA theme-->
     <meta name="theme-color" content="#000000">
-    <!-- Bootstrap CSS -->
-    <link rel="preload" href="/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/css/bootstrap.min.css"></noscript>
-    <script defer src="/js/cssrelpreload.min.js"></script>
+
     <title>Spaced Out</title>
     <style>
         body {
@@ -56,6 +53,11 @@
         #workexperience {
             text-align: center;
             color: black;
+        }
+        
+        #learnmore-button {
+            background-color: #0288d1;
+            color: #212121
         }
         
         #scrollBtn {
@@ -138,6 +140,11 @@
 </head>
 
 <body id="page-top">
+    <!-- Bootstrap CSS -->
+    <link rel="preload" href="/css/bootstrap.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/css/bootstrap.min.css"></noscript>
+    <script defer src="/js/cssrelpreload.min.js"></script>
+
     <nav class="navbar navbar-expand-lg navbar-dark" id="navbar-wrapper">
         <a class="navbar-brand" href="#page-top" id="Spaced Out Branding"><img src="/img/spacedout-brand.svg" id="brand-logo" alt="Spaced Out Logo">
         </a>
@@ -180,7 +187,9 @@
         <br>
         <h2 class="display-4 my-5">Welcome to Spaced Out</h2>
         <h5 class="display-5 my-5 font-weight-light text-light">We design responsive websites for your small business and do the online marketing for you</h5>
-        <a href="#projectsHeading" class="btn btn-info btn-lg rounded-circle my-5" id="viewprojects-button" aria-label="View Projects"><i class="fas fa-angle-down"></i></a>
+        <a href="#whyspacedoutHeading" title="Learn more" class="btn rounded-square my-5" id="learnmore-button" aria-label="Learn More">
+            <h6 class="font-weight-normal">Learn more</h6>
+        </a>
     </header>
     <br>
 
