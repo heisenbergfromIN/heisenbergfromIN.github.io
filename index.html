@@ -61,7 +61,11 @@
         
         #learnmore-button {
             background-color: #0288d1;
-            color: #212121
+            color: white;
+        }
+        
+        #learnmore-button:hover {
+            background-color: #212121;
         }
         
         #scrollBtn {
@@ -78,7 +82,7 @@
         }
         
         #scrollBtn:hover {
-            background-color: #555;
+            background-color: #0288d1;
         }
         
         #team-photo {
@@ -156,10 +160,10 @@
                     <a class="nav-link" href="#page-top"><i class="fas fa-home highlight-text"></i> Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link" href="#projectsHeading"><i class="fas fa-boxes highlight-text"></i> Projects</a>
+                    <a class="nav-link" href="#whyspacedoutHeading"><i class="fas fa-question-circle highlight-text"></i> Why Spaced Out</a>
                 </li>
                 <li class="nav-item mx-2">
-                    <a class="nav-link" href="#whyspacedoutHeading"><i class="fas fa-question-circle highlight-text"></i> Why Spaced Out</a>
+                    <a class="nav-link" href="#projectsHeading"><i class="fas fa-boxes highlight-text"></i> Projects</a>
                 </li>
                 <li class="nav-item mx-2">
                     <a class="nav-link" href="#skillsHeading"><i class="fas fa-code highlight-text"></i> Skills</a>
@@ -185,44 +189,11 @@
         <br>
         <br>
         <h2 class="display-4 my-5">Welcome to Spaced Out</h2>
-        <h5 class="display-5 my-5 font-weight-light text-light">We design responsive websites for your small business and do the online marketing for you</h5>
-        <a href="#whyspacedoutHeading" title="Learn more" class="btn rounded-square my-5" id="learnmore-button" aria-label="Learn More">
+        <h5 class="display-5 my-5 font-weight-light text-light">We design fast and responsive websites for your small business and do online marketing for you</h5>
+        <a href="#whyspacedoutHeading" title="Learn more" class="btn btn-sm my-5" id="learnmore-button" aria-label="Learn More">
             <h6 class="font-weight-normal">Learn more</h6>
         </a>
     </header>
-    <br>
-
-    <!-- Projects section -->
-
-    <div class="container" id="projects">
-        <h1 class="font-weight-light" id="projectsHeading">Projects</h1>
-        <br>
-        <h4 class="text-muted">Digital Marketing</h4>
-        <br>
-        <div class="card mx-auto">
-            <img class="card-img-top rounded img-fluid" data-src="/img/Projects.webp" alt="Digital Marketing Nanodegree projects">
-            <noscript><img class="card-img-top rounded img-fluid" src="/img/Projects.webp" alt="Digital Marketing Nanodegree projects"></noscript>
-            <div class="card-body">
-                <h5 class="card-title"> Udacity Digital Marketing Nanodegree</h5>
-                <p class="card-text">Summarized the different marketing campaigns executed and reflected on the results. Evaluated the ROI of the campaigns, compared the results across platforms, then formulated recommendations for future marketing action and budget allocation.
-                    View my Udacity profile below to see the projects.</p>
-                <a href="https://profiles.udacity.com/p/9709879601" title="View Udacity Profile" class="btn btn-dark mt-2">View Profile</a>
-                <button data-target="#nanodegree-modal" title="View Certificate" class="btn btn-dark mt-2 mx-2" data-toggle="modal" role="button">View Certificate</button>
-            </div>
-        </div>
-        <br>
-        <h4 class="text-muted">Web Design</h4>
-        <br>
-        <div class="card mx-auto">
-            <img class="card-img-top rounded img-fluid" data-src="/img/cover.webp" alt="Spaced Out website">
-            <noscript><img class="card-img-top rounded img-fluid" src="/img/cover.webp" alt="Spaced Out website"></noscript>
-            <div class="card-body">
-                <h5 class="card-title"> Spaced Out</h5>
-                <p class="card-text">Used HTML5, CSS3, and Bootstrap to build an agency website, which you are viewing right now. Take a look at the source on GitHub.</p>
-                <a href="https://github.com/heisenbergfromIN/heisenbergfromIN.github.io" title="View source code" class="btn btn-dark mt-2">View Source</a>
-            </div>
-        </div>
-    </div>
     <br>
 
     <!-- Why Spaced Out? -->
@@ -317,6 +288,38 @@
     </div>
     <br>
 
+    <!-- Projects section -->
+
+    <div class="container" id="projects">
+        <h1 class="font-weight-light" id="projectsHeading">Projects</h1>
+        <br>
+        <h4 class="text-muted">Digital Marketing</h4>
+        <br>
+        <div class="card mx-auto">
+            <img class="card-img-top rounded img-fluid" data-src="/img/Projects.webp" alt="Digital Marketing Nanodegree projects">
+            <noscript><img class="card-img-top rounded img-fluid" src="/img/Projects.webp" alt="Digital Marketing Nanodegree projects"></noscript>
+            <div class="card-body">
+                <h5 class="card-title"> Udacity Digital Marketing Nanodegree</h5>
+                <p class="card-text">Summarized the different marketing campaigns executed and reflected on the results. Evaluated the ROI of the campaigns, compared the results across platforms, then formulated recommendations for future marketing action and budget allocation.
+                    View my Udacity profile below to see the projects.</p>
+                <a href="https://profiles.udacity.com/p/9709879601" title="View Udacity Profile" class="btn btn-dark mt-2">View Profile</a>
+                <button data-target="#nanodegree-modal" title="View Certificate" class="btn btn-dark mt-2 mx-2" data-toggle="modal" role="button">View Certificate</button>
+            </div>
+        </div>
+        <br>
+        <h4 class="text-muted">Web Design</h4>
+        <br>
+        <div class="card mx-auto">
+            <img class="card-img-top rounded img-fluid" data-src="/img/cover.webp" alt="Spaced Out website">
+            <noscript><img class="card-img-top rounded img-fluid" src="/img/cover.webp" alt="Spaced Out website"></noscript>
+            <div class="card-body">
+                <h5 class="card-title"> Spaced Out</h5>
+                <p class="card-text">Used HTML5, CSS3, and Bootstrap to build an agency website, which you are viewing right now. Take a look at the source on GitHub.</p>
+                <a href="https://github.com/heisenbergfromIN/heisenbergfromIN.github.io" title="View source code" class="btn btn-dark mt-2">View Source</a>
+            </div>
+        </div>
+    </div>
+    <br>
     <!-- Skills -->
 
     <div class="container" id="skills">
